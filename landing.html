@@ -1,18 +1,18 @@
 <SCRIPT>
 function passWord() {
 var testV = 1;
-var pass1 = prompt('Please Enter Your Password',' ');
+var pass1 = prompt('enter password','password goes here ');
 while (testV < 3) {
 if (!pass1) 
 history.go(-1);
 if (pass1.toLowerCase() == "osclaim") {
-alert('You Got it Right!');
+alert('cool let\'s go');
 window.open('main.html');
 break;
 } 
 testV+=1;
 var pass1 = 
-prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+prompt('Nope that\'s not it','try again bucko');
 }
 if (pass1.toLowerCase()!="password" & testV ==3) 
 history.go(-1);
@@ -21,6 +21,6 @@ return " ";
 </SCRIPT>
 <CENTER>
 <FORM>
-<input type="button" value="Enter Protected Area" onClick="passWord()">
+<input type="button" value="come on in!" onClick="passWord()">
 </FORM>
 </CENTER>
